@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
 
     public String ConcatERemove(String s, String t, int k) {
@@ -55,7 +57,17 @@ public class Main {
 
     public static void main(String[] args) {
         Main main = new Main();
-        String res = main.ConcatERemove("abcdefg", "abddefgabc", 5);
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("s: ");
+        String s = in.nextLine();
+        System.out.print("t: ");
+        String t = in.nextLine();
+        System.out.print("k: ");
+        int k = in.nextInt();
+        System.out.print("");
+
+        String res = main.ConcatERemove(s, t, k);
         System.out.println(res);
     }
 }
