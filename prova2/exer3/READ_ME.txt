@@ -1,9 +1,11 @@
 PROVA 2 - EXERCÍCIO 3:
-[Resolução no OnlineGDB](https://onlinegdb.com/rkD9diE_O)
+Resolução no OnlineGDB: https://onlinegdb.com/rkD9diE_O
+
 
   Para auxiliar os testes do código realizei um simples teste de mesa, adicionando e removendo
-os caractéres de acordo com a necessidade. Fazendo isso determinei quatro veriifcações que utilizei,
-as quais foram:
+os caractéres de acordo com a necessidade. Assim defini uma estratégia para calcular o número de mudanças necessarias,
+e também determinei as quatro verificações para retornar os resultados, as quais foram:
+
   - Verificar se a soma do tamanho das String's é maior ou igual ao número de mudanças permitidas (k). 
       Se for maior, sempre será possível a conversão, portanto retorno 'sim'.
       Se for menor:
