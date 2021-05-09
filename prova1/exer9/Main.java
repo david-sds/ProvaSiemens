@@ -1,14 +1,13 @@
 public class Main
 {
     public int pesquisa_linear(int[] vetor, int tamanho, int chave) {
-        int index = -1;
 
         for(int i = 0; i < tamanho; i++) {
             if(vetor[i] == chave)
                 return i;
         }
 
-        return index;
+        return -1;
     }
 
     public static void main(String[] args) {
