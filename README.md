@@ -1,2 +1,2 @@
 # ProvaSiemens
-Códigos criados para a resolução das questões das provas da Siemens.
+Códigos criados para a resolução de algumas questões das provas do processo de seleção para estágio da Siemens.
