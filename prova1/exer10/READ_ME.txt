@@ -5,11 +5,11 @@ Resolução no OnlineGDB: https://onlinegdb.com/HyanCEEOO
   Por conta do tipo String em Java ser imutável, acretido que seria impossível modificar a 
 String sem a substituir. Importei a classe StringBuilder, que eu imagino que se assemelhe mais
 a String das linguagens C e C++, as quais eu acho que esse exercício tenha sido pensado para.
-  Para realizar a inversão, percorri a lista em ambas as direçoes em um laço de repedição,
+  Para realizar a inversão, percorri a lista em ambas as direçoes em um laço de repetição,
 da mesma maneira que fiz no teste de mesa abaixo, salvei os caracteres em cada uma das pontas
 em duas variáveis char, e as troquei. Fiz esse processo até chegar na metade da String.
-  A variavel que defini como metada varia se o tamanho da String é par ou impar, para evitar
-que caracteres fossem deixados sem serem invertidos.
+  A variavel que defini como metade varia se o tamanho da String é par ou impar, para evitar
+que caracteres fossem deixados sem ser invertidos.
 
 Teste de Mesa: 
 abcdef
