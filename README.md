@@ -1,2 +1,2 @@
 # ProvaSiemens
-Códigos criados para a resolução de algumas questões das provas do processo de seleção para estágio da Siemens.
+Códigos criados em Java, para a resolução de questões do processo de seleção para estágio da Siemens.
