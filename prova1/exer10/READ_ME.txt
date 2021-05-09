@@ -1,6 +1,6 @@
 PROVA 1 - EXERCÍCIO 10:
 
-Resolução no OnlineGDB: https://onlinegdb.com/HyanCEEOO
+Resolução no OnlineGDB: https://onlinegdb.com/SJI5GCH_d
 
   Por conta do tipo String em Java ser imutável, acretido que seria impossível modificar a 
 String sem a substituir. Importei a classe StringBuilder, que eu imagino que se assemelhe mais
