@@ -6,7 +6,7 @@ public class Main
         int metade;
 
         if(tamanho % 2 == 0)
-            metade = tamanho/2 + 1;
+            metade = tamanho/2 - 1;
         else
             metade = tamanho/2;
 
