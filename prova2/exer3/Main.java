@@ -6,12 +6,12 @@ public class Main {
 
         String maior, menor;
 
-        // Se o numero de mudancas permitidas (k), for maior que a quantidade de caracteres em ambas as strings,
-        // sempre e possivel realizar a transicao
+        // Se o número de mudancas permitidas (k), for maior ou igual a qtd de char's em ambas as strings,
+        // sempre e possivel realizar a modificação
         if(k >= s.length() + t.length())
             return "sim";
 
-        if(s.length() >= t.length()) {
+        if(s.length() >= t.length()) {  // Verifica qual é a String maior e menor para evitar indexOutOfBoundsException
             maior = s;
             menor = t;
         } else {
@@ -24,9 +24,9 @@ public class Main {
         int numDifferAfter = 0;
         boolean isDiffer = false;
 
-        // percorre as duas strings, e compara seus caracteres
-        // conta numero de subistituicoes de caracteres (duas mudancas),
-        // conta o numero de caracteres a serem add no final (uma mudanca)
+        // Percorre as duas String's, e compara seus char's;
+        // Conta o número de subistituições necessárias;
+        // Conta o número de char's a serem add no final.
         for(int i = 0; i < maior.length(); i++) {
             if(i < menor.length()) {
                 if(maior.charAt(i) != menor.charAt(i)) {
@@ -40,16 +40,17 @@ public class Main {
 
         }
 
+        // Calcula número de mudanças: Subistituição de char = duas mudanças; add no final = uma mudança
         minNecesChanges = (countAfterFirstDiffer * 2) + numDifferAfter;
 
-        if(k < minNecesChanges) // # de mudancas insuficiente
+        if(k < minNecesChanges) // Número de mudancas insuficiente
             return "não";
         else {
-            if(k == minNecesChanges) // # de mudancas exato
+            if(k == minNecesChanges) // Número de mudancas exato
                 return "sim";
-            else if((k - minNecesChanges) % 2 == 0) // possivel corrigir mudancas extras (add e remove o mesmo char)
+            else if((k - minNecesChanges) % 2 == 0) // k's extras podem ser add/removidos dois por dois
                 return "sim";
-            else                    // impossivel corrigir mudancas extras (so consegue remover ou add)
+            else                    // Sobra um k
                 return "não";
         }
 
